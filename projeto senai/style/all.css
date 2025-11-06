@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #aee0e8;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul a {
+    color: #000000;
+    font-weight: bold;
+}
+nav ul a:hover {
+    color: #ffffff;
+}
+
+/* Banner */
+.banner img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+/* Introdução */
+.intro {
+    text-align: center;
+    padding: 40px 20px;
+}
+.intro h2 {
+    color: #e5937b;
+    margin-bottom: 20px;
+}
+.pets {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.pets img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.intro p {
+    max-width: 800px;
+    margin: auto;
+    color: #0578ad;
+}
+
+/* Catálogo */
+.catalogo {
+    text-align: center;
+    padding: 40px 20px;
+}
+.catalogo h2 {
+    color: #d97b5e;
+    margin-bottom: 30px;
+}
+.produtos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card {
+    width: 220px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+}
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.card h3 {
+    margin: 10px 0;
+}
+.card span {
+    color: #d97b5e;
+    font-weight: bold;
+}
+.card button {
+    background-color: #f3b4b4;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.card button:hover {
+    background-color: #e38f8f;
+}
+
+/* Adoção */
+.adocao {
+    text-align: center;
+    padding: 40px 20px;
+}
+.adocao form {
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 250px;
+}
+.adocao input, .adocao button {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.adocao button {
+    background-color: #aee0e8;
+    cursor: pointer;
+}
+.adocao button:hover {
+    background-color: #7bc8d1;
+}
+.adocao img {
+    margin-top: 20px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #aee0e8;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
