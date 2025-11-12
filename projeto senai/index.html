@@ -1,99 +1,147 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pawshop</title>
-    <link rel="stylesheet" href="style/all.css">
-</head>
-<body>
-    <!-- cabeçalho -->
-    <header>
-        <nav>
-            <ul>
-                <a href="#">Home</a>
-                <a href="#">Adoção</a>
-                <a href="#">Galeria</a>
-                <a href="#">Contatos</a>
-            </ul>
-            <img class="pati" src="pata-de-cachorro-em-um-coracao.png" alt="" width="5%">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pawshop</title>
+        <link rel="stylesheet" href="style/all.css">
+    </head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <body>
+        <!-- cabeçalho -->
+        <header>
+            <nav>
+                <ul>
+                    <a href="#">Home</a>
+                    <a href="#">Adoção</a>
+                    <a href="#">Galeria</a>
+                    <a href="#">Contatos</a>
+                </ul>
+                <img class="pati" src="pata-de-cachorro-em-um-coracao.png" alt="" width="5%">
         </nav>
     </header>
-<!-- banner principal -->
- <section class="banner">
-    <img src="projeto/images/banner/banner.png" alt="">
- </section>
-
- <!-- Texto de chamada -->
-    <section class="intro">
-        <h2>SEU PET PRECISA DE COMIDA? OU DE UNS PETISCOS? VOCÊ ESTÁ NO LUGAR CERTO!</h2>
-        <div class="pets">
-            <img src="projeto/images/dogsSection/img1.png" alt="Cachorro 1">
-            <img src="projeto/images/dogsSection/img2.png" alt="Cachorro 2">
-            <img src="projeto/images/dogsSection/img3.png" alt="Cachorro 3">
-            <img src="projeto/images/dogsSection/img4.png" alt="Cachorro 4">
-        </div>
-        <p>
-            Na nossa empresa, sabemos que seu pet é mais do que um simples animal ele faz parte da sua família.
-            Por isso, oferecemos produtos de qualidade, carinho e dedicação para que seu amigo de quatro patas tenha
-            sempre o melhor. Trabalhamos com as melhores marcas do mercado e garantimos o conforto e a alegria do seu pet.
-        </p>
-    </section>
-
-<!-- Catálogo de produtos -->
-    <section class="catalogo">
-        <h2>CATÁLOGO DE PRODUTOS</h2>
-        <div class="produtos">
-            <div class="card">
-                <img src="projeto/images/products/productImage.png" alt="Coleira">
-                <h3>Coleira</h3>
-                <p>A coleira é essencial para manter seu pet seguro e estiloso durante os passeios.</p>
-                <span>R$ 100</span>
-                <button>Ver Mais</button>
-            </div>
-
-            <div class="card">
-                <img src="projeto/images/products/productImage2.png" alt="Comida">
-                <h3>Comida</h3>
-                <p>Alimentos balanceados e ricos em nutrientes para manter seu pet saudável e feliz.</p>
-                <span>R$ 100</span>
-                <button>Ver Mais</button>
-            </div>
-
-            <div class="card">
-                <img src="projeto/images/products/productImage3.png" alt="Disco de brinquedo">
-                <h3>Disco de Brinquedo</h3>
-                <p>O brinquedo perfeito para se divertir ao ar livre com o seu cão.</p>
-                <span>R$ 100</span>
-                <button>Ver Mais</button>
-            </div>
-
-            <div class="card">
-                <img src="projeto/images/products/productImage4.png" alt="Casinha">
-                <h3>Casinha</h3>
-                <p>Conforto e abrigo para seu pet descansar com segurança e tranquilidade.</p>
-                <span>R$ 100</span>
-                <button>Ver Mais</button>
-            </div>
-        </div>
-    </section>
     
-    <!-- Adoção -->
-    <section class="adocao">
-        <h2>ADOTE UM PET</h2>
-        <p>Insira aqui as suas informações para adotar um amigo que vai trazer amor e alegria para sua vida!</p>
-        <form>
-            <input type="text" placeholder="Nome">
-            <input type="email" placeholder="E-mail">
-            <input type="text" placeholder="Cidade">
-            <button type="submit">Enviar</button>
-        </form>
-        <img src="projeto/images/imgBanner.png" alt="Pessoa abraçando cachorro">
-    </section>
+    <main>
 
-     <!-- Rodapé -->
+        <div id="banner" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img src="projeto/images/banner/banner.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+            <img src="projeto/images/banner/banner2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+            <img src="projeto/images/banner/banner3.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#banner" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#banner" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+        
+        <!-- Texto de chamada -->
+            <section class="intro">
+            <h2>SEU PET PRECISA DE COMIDA? OU DE UNS PETISCOS? VOCÊ ESTÁ NO LUGAR CERTO!</h2>
+            <div class="pets">
+                <img src="projeto/images/dogsSection/img1.png" alt="Cachorro 1">
+                <img src="projeto/images/dogsSection/img2.png" alt="Cachorro 2">
+                <img src="projeto/images/dogsSection/img3.png" alt="Cachorro 3">
+                <img src="projeto/images/dogsSection/img4.png" alt="Cachorro 4">
+            </div>
+            <p>
+                Na nossa empresa, sabemos que seu pet é mais do que um simples animal ele faz parte da sua família.
+                Por isso, oferecemos produtos de qualidade, carinho e dedicação para que seu amigo de quatro patas tenha
+                sempre o melhor. Trabalhamos com as melhores marcas do mercado e garantimos o conforto e a alegria do seu pet.
+            </p>
+        </section>
+
+        <!-- Catálogo de produtos -->
+        <section class="catalogo">
+            <h2>CATÁLOGO DE PRODUTOS</h2>
+            <div class="produtos">
+                <div class="card">
+                    <img src="projeto/images/products/productImage.png" alt="Coleira">
+                    <h3>Coleira</h3>
+                    <p>A coleira é essencial para manter seu pet seguro e estiloso durante os passeios.</p>
+                    <span>R$ 100</span>
+                    <button data-bs-toggle="modal" data-bs-target="#staticBackdrop" >Ver Mais</button>
+                </div>
+
+                <div class="card">
+                    <img src="projeto/images/products/productImage2.png" alt="Comida">
+                    <h3>Comida</h3>
+                    <p>Alimentos balanceados e ricos em nutrientes para manter seu pet saudável e feliz.</p>
+                    <span>R$ 100</span>
+                    <button data-bs-toggle="modal" data-bs-target="#staticBackdrop" >Ver Mais</button>
+                </div>
+                
+                <div class="card">
+                    <img src="projeto/images/products/productImage3.png" alt="Disco de brinquedo">
+                    <h3>Disco de Brinquedo</h3>
+                    <p>O brinquedo perfeito para se divertir ao ar livre com o seu cão.</p>
+                    <span>R$ 100</span>
+                    <button data-bs-toggle="modal" data-bs-target="#staticBackdrop" >Ver Mais</button>
+                </div>
+                
+                <div class="card">
+                    <img src="projeto/images/products/productImage4.png" alt="Casinha">
+                    <h3>Casinha</h3>
+                    <p>Conforto e abrigo para seu pet descansar com segurança e tranquilidade.</p>
+                    <span>R$ 100</span>
+                    <button data-bs-toggle="modal" data-bs-target="#staticBackdrop" >Ver Mais</button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Adoção -->
+        <section class="adocao">
+            <div>
+                <h2>ADOTE UM PET</h2>
+                <p>Insira aqui as suas informações para adotar um amigo que vai trazer amor e alegria para sua vida!</p>
+                <form>
+                    <input type="text" placeholder="Nome">
+                    <input type="email" placeholder="E-mail">
+                    <input type="text" placeholder="Cidade">
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+            <img src="projeto/images/imgBanner.png" alt="Pessoa abraçando cachorro">
+        </section>
+        
+        
+    </main>
+
+    <!-- Rodapé -->
     <footer>
-        <p>© 2025 Pawshop - Todos os direitos reservados</p>
+    <p>© 2025 Pawshop - Todos os direitos reservados</p>
     </footer>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
 </body>
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Understood</button>
+      </div>
+    </div>
+  </div>
+</div>
 </html>

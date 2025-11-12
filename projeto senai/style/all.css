@@ -22,6 +22,7 @@ nav ul {
 nav ul a {
     color: #000000;
     font-weight: bold;
+    text-decoration: none;
 }
 nav ul a:hover {
     color: #ffffff;
@@ -111,13 +112,15 @@ nav ul a:hover {
 .adocao {
     text-align: center;
     padding: 40px 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 .adocao form {
     margin: 20px auto;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 250px;
 }
 .adocao input, .adocao button {
     padding: 8px;
@@ -133,7 +136,6 @@ nav ul a:hover {
 }
 .adocao img {
     margin-top: 20px;
-    width: 250px;
     border-radius: 10px;
 }
 
